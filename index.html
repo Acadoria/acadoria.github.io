@@ -1,71 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Acadoria Academy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#ecdbcb;
+padding:0;
+box-sizing:border-box;
 }
+
+body{
+background:#ecdbcb;
+font-family:Arial,sans-serif;
+color:#4d3628;
+}
+
+/* BARRE HAUT */
 
 header{
 background:#10326b;
-padding:20px;
-color:white;
+padding:20px 40px;
+border-bottom:1px solid #ecdbcb;
 }
 
 nav{
 display:flex;
 justify-content:space-between;
+align-items:center;
 }
 
 .left-menu,
 .right-menu{
 display:flex;
-gap:30px;
+gap:35px;
+align-items:center;
 }
 
+a{
+text-decoration:none;
+color:#ecdbcb;
+transition:0.3s;
+}
+
+a:hover{
+opacity:0.7;
+}
+
+/* HERO */
+
 .hero{
-padding:80px;
 background:#10326b;
-color:white;
+min-height:350px;
+padding:60px;
+position:relative;
+border-bottom:1px solid #ecdbcb;
+}
+
+/* LANGUES */
+
+.languages{
+position:absolute;
+left:50px;
+top:80px;
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+padding-right:25px;
+border-right:1px solid #ecdbcb;
+}
+
+.languages a{
+font-size:18px;
+}
+
+/* TEXTE PRINCIPAL */
+
+.hero-content{
+margin-left:120px;
 }
 
 .hero h1{
-font-size:70px;
-margin:0;
+font-family:'Cormorant Garamond', serif;
+font-size:85px;
+color:white;
 }
 
 .hero p{
-font-size:24px;
+font-size:30px;
+color:white;
+margin-top:15px;
 }
+
+/* RECHERCHE */
+
+.search-container{
+position:absolute;
+right:80px;
+top:110px;
+}
+
+.search-box{
+padding:12px;
+width:250px;
+background:#ecdbcb;
+border:none;
+outline:none;
+color:#4d3628;
+border-radius:4px;
+}
+
+/* SECTION */
 
 .section{
-padding:50px;
+padding:60px;
 }
 
-.cards{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-width:250px;
-padding:20px;
-border-radius:10px;
-}
-
-h2{
+.section h2{
+font-size:40px;
+margin-bottom:40px;
 color:#4d3628;
 }
 
+/* UPLOADS */
+
+.uploads{
+display:flex;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.uploads a{
+color:#4d3628;
+font-size:24px;
+text-decoration:none;
+}
+
+.uploads a:hover{
+text-decoration:underline;
+}
+
+/* TRAIT */
+
+.separator{
+height:1px;
+background:#4d3628;
+width:100%;
+margin:40px 0;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -75,25 +169,38 @@ color:#4d3628;
 <nav>
 
 <div class="left-menu">
+
 <a href="maths.html">Maths</a>
-<div>Chimie</div>
-<div>Biologie</div>
-<div>Physique</div>
+<a href="#">Chimie</a>
+<a href="#">Biologie</a>
+<a href="#">Physique</a>
+
 </div>
 
 <div class="right-menu">
-<div>Home</div>
-<div>Premium</div>
-<div>Profile</div>
-<div>Contact Us</div>
-<div>🔍</div>
+
+<a href="index.html">Home</a>
+<a href="#">Premium</a>
+<a href="#">Contact Us</a>
+<a href="#">Profile</a>
+
 </div>
 
 </nav>
 
 </header>
 
-<div class="hero">
+<section class="hero">
+
+<div class="languages">
+
+<a href="#">DE</a>
+<a href="#">FR</a>
+<a href="#">EN</a>
+
+</div>
+
+<div class="hero-content">
 
 <h1>Acadoria Academy</h1>
 
@@ -101,27 +208,42 @@ color:#4d3628;
 
 </div>
 
-<div class="section">
+<div class="search-container">
+
+<input
+class="search-box"
+type="text"
+placeholder="Rechercher..."
+>
+
+</div>
+
+</section>
+
+<section class="section">
 
 <h2>New Uploads</h2>
 
-<div class="cards">
+<div class="separator"></div>
 
-<div class="card">
-Fonction quadratique
+<div class="uploads">
+
+<a href="#">Fonction quadratique</a>
+
+<a href="#">Kurvendiskussion</a>
+
+<a href="#">Champ magnétique</a>
+
+<a href="#">Immunité innée</a>
+
+<a href="#">Vecteurs</a>
+
+<a href="#">Acides et bases</a>
+
 </div>
 
-<div class="card">
-Kurvendiskussion
-</div>
-
-<div class="card">
-Champ magnétique
-</div>
-
-</div>
-
-</div>
+</section>
 
 </body>
+
 </html>
