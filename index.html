@@ -158,10 +158,81 @@ width:100%;
 margin:40px 0;
 }
 
+.hero{
+min-height:280px;
+}
+
+.hero-content{
+margin-left:130px;
+}
+
+.hero h1{
+font-size:152px;
+line-height:0.9;
+}
+
+.hero p{
+margin-top:5px;
+position:relative;
+top:30px;
+}
+
+.languages{
+height:240px;
+justify-content:center;
+}
+
+.search-wrapper{
+display:flex;
+align-items:center;
+}
+
+.search-btn{
+background:none;
+border:none;
+font-size:22px;
+cursor:pointer;
+color:#ecdbcb;
+}
+
+.search-hidden{
+display:none;
+margin-left:10px;
+padding:10px;
+background:#ecdbcb;
+border:none;
+border-radius:4px;
+color:#4d3628;
+width:220px;
+}
+
+.section{
+padding:60px;
+}
+
+.uploads{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.uploads a{
+font-size:22px;
+color:#4d3628;
+text-decoration:none;
+transition:0.3s;
+}
+
+.uploads a:hover{
+transform:translateY(-3px);
+text-decoration:underline;
+}  
+  
 </style>
 
 </head>
 
+<body>
 <body>
 
 <header>
@@ -169,20 +240,32 @@ margin:40px 0;
 <nav>
 
 <div class="left-menu">
-
 <a href="maths.html">Maths</a>
 <a href="#">Chimie</a>
 <a href="#">Biologie</a>
 <a href="#">Physique</a>
-
 </div>
 
 <div class="right-menu">
-
 <a href="index.html">Home</a>
 <a href="#">Premium</a>
 <a href="#">Contact Us</a>
 <a href="#">Profile</a>
+
+<div class="search-wrapper">
+
+<button class="search-btn" onclick="toggleSearch()">
+🔍
+</button>
+
+<input
+type="text"
+class="search-hidden"
+id="searchBar"
+placeholder="Rechercher..."
+>
+
+</div>
 
 </div>
 
@@ -205,16 +288,6 @@ margin:40px 0;
 <h1>Acadoria Academy</h1>
 
 <p>Studying doesn't suck as much as failing</p>
-
-</div>
-
-<div class="search-container">
-
-<input
-class="search-box"
-type="text"
-placeholder="Rechercher..."
->
 
 </div>
 
@@ -243,6 +316,110 @@ placeholder="Rechercher..."
 </div>
 
 </section>
+
+<section class="section">
+
+<h2>Most Popular</h2>
+
+<div class="separator"></div>
+
+<div class="uploads">
+
+<a href="#">Cinématique</a>
+
+<a href="#">Fonction exponentielle</a>
+
+<a href="#">Champ électrique</a>
+
+<a href="#">Système immunitaire</a>
+
+<a href="#">Réactions acido-basiques</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Popular Videos</h2>
+
+<div class="separator"></div>
+
+<div class="uploads">
+
+<a href="#">Vecteurs</a>
+
+<a href="#">Intégrales</a>
+
+<a href="#">Forces</a>
+
+<a href="#">ADN</a>
+
+<a href="#">Oxydoréduction</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Recent PDFs</h2>
+
+<div class="separator"></div>
+
+<div class="uploads">
+
+<a href="#">Résumé Immunité</a>
+
+<a href="#">Résumé Mécanique</a>
+
+<a href="#">Résumé Analyse</a>
+
+<a href="#">Résumé Chimie</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Podcasts</h2>
+
+<div class="separator"></div>
+
+<div class="uploads">
+
+<a href="#">Motivation Bac</a>
+
+<a href="#">Réussir ses examens</a>
+
+<a href="#">Méthodes de travail</a>
+
+<a href="#">Orientation</a>
+
+</div>
+
+</section>
+
+<script>
+
+function toggleSearch(){
+
+let search =
+document.getElementById("searchBar");
+
+if(search.style.display==="block"){
+search.style.display="none";
+}
+else{
+search.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
 
 </body>
 
