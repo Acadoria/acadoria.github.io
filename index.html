@@ -23,11 +23,11 @@ font-family:Arial,sans-serif;
 color:#4d3628;
 }
 
-/* BARRE HAUTE */
+/* BARRE DU HAUT */
 
 header{
 background:#10326b;
-padding:12px 40px;
+padding:8px 50px;
 border-bottom:1px solid #ecdbcb;
 }
 
@@ -35,13 +35,14 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
+height:50px;
 }
 
 .left-menu,
 .right-menu{
 display:flex;
 align-items:center;
-gap:40px;
+gap:35px;
 }
 
 a{
@@ -51,191 +52,132 @@ transition:0.3s;
 }
 
 a:hover{
-opacity:0.75;
+opacity:0.8;
 }
 
-/* HERO */
+/* SECTION BLEUE */
 
 .hero{
 background:#10326b;
-height:330px;
+height:420px;
 position:relative;
 border-bottom:1px solid #ecdbcb;
-display:flex;
-align-items:center;
 }
 
 /* LANGUES */
 
 .languages{
-
 position:absolute;
 
-left:60px;
-
+left:0;
 top:0;
-bottom:0;
 
-width:70px;
+width:140px;
+height:100%;
 
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-gap:28px;
 
 border-right:1px solid #ecdbcb;
-
 }
 
 .languages a{
-font-size:22px;
+font-size:24px;
+margin:22px 0;
 }
 
 /* TITRE */
 
 .hero-content{
+position:absolute;
 
-margin-left:140px;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-
+left:190px;
+top:50%;
+transform:translateY(-50%);
 }
 
 .hero h1{
-
 font-family:'Cormorant Garamond',serif;
-
 font-style:italic;
-
-font-size:152px;
-
-line-height:0.9;
-
+font-size:165px;
+line-height:0.85;
 color:white;
-
 }
 
 .hero p{
-
+font-size:32px;
 color:white;
-
-font-size:30px;
-
-margin-top:10px;
-
-padding-left:10px;
-
+margin-top:20px;
+margin-left:15px;
 }
 
 /* RECHERCHE */
 
 .search-wrapper{
-
 display:flex;
 align-items:center;
-
 }
 
 .search-btn{
-
 background:none;
-
 border:none;
-
 cursor:pointer;
-
-font-size:24px;
-
+font-size:22px;
 color:#ecdbcb;
-
 }
 
 .search-hidden{
-
 display:none;
-
 margin-left:10px;
-
-padding:12px;
-
-width:250px;
-
-border:none;
-
-outline:none;
-
+padding:10px;
+width:240px;
 background:#ecdbcb;
-
+border:none;
+border-radius:4px;
 color:#4d3628;
-
-border-radius:5px;
-
 }
 
 /* CONTENU */
 
 .section{
-padding:60px;
+padding:55px 60px;
 }
 
 .section h2{
-
-font-size:52px;
-
-margin-bottom:30px;
-
+font-size:54px;
+margin-bottom:25px;
 color:#4d3628;
-
 }
 
 .separator{
-
 height:1px;
-
 background:#4d3628;
-
 width:100%;
-
-margin-bottom:35px;
-
+margin-bottom:30px;
 }
 
 .uploads{
-
 display:flex;
-
 flex-wrap:wrap;
-
-gap:50px;
-
+gap:45px;
 }
 
 .uploads a{
-
 color:#4d3628;
-
-font-size:26px;
-
+font-size:24px;
 transition:0.3s;
-
 }
 
 .uploads a:hover{
-
 transform:translateY(-3px);
-
 text-decoration:underline;
-
-}
-  
+}  
 </style>
 
 </head>
 
-<body>
 <body>
 
 <header>
@@ -260,13 +202,6 @@ text-decoration:underline;
 <button class="search-btn" onclick="toggleSearch()">
 🔍
 </button>
-
-<input
-type="text"
-class="search-hidden"
-id="searchBar"
-placeholder="Rechercher..."
->
 
 </div>
 
@@ -403,26 +338,6 @@ placeholder="Rechercher..."
 </div>
 
 </section>
-
-<script>
-
-function toggleSearch(){
-
-let search =
-document.getElementById("searchBar");
-
-if(search.style.display==="block"){
-search.style.display="none";
-}
-else{
-search.style.display="block";
-}
-
-}
-
-</script>
-
-</body>
 
 </body>
 
