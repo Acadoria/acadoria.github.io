@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acadoria Academy</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f8f6f0;
+}
+
+header{
+    background:#162b63;
+    color:white;
+    padding:20px;
+}
+
+.top-menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.subjects a,
+.nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:25px;
+}
+
+.hero{
+    background:#162b63;
+    color:white;
+    display:flex;
+    padding:40px;
+    border-top:1px solid white;
+}
+
+.languages{
+    width:80px;
+    border-right:1px solid white;
+    padding-right:20px;
+}
+
+.languages p{
+    margin:20px 0;
+}
+
+.main-title{
+    padding-left:40px;
+}
+
+.main-title h1{
+    font-size:80px;
+    margin:0;
+    font-family:Georgia, serif;
+}
+
+.main-title p{
+    font-size:28px;
+}
+
+.search{
+    margin-left:50px;
+    margin-top:15px;
+}
+
+.search input{
+    padding:10px;
+    width:250px;
+}
+
+.content{
+    padding:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#162b63;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="top-menu">
+
+<div class="subjects">
+<a href="#">Maths</a>
+<a href="#">Chimie</a>
+<a href="#">Biologie</a>
+<a href="#">Physique</a>
+</div>
+
+<div class="nav">
+<a href="#">Home</a>
+<a href="#">Content</a>
+<a href="#">Contact Us</a>
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="languages">
+<p>DE</p>
+<p>FR</p>
+<p>EN</p>
+</div>
+
+<div class="main-title">
+<h1>Acadoria Academy</h1>
+<p>Studying doesn't suck as much as failing</p>
+</div>
+
+<div class="search">
+<input type="text" placeholder="Rechercher...">
+</div>
+
+</section>
+
+<section class="content">
+
+<div class="grid">
+
+<div class="card">
+<h3>Maths</h3>
+<p>Cours</p>
+</div>
+
+<div class="card">
+<h3>Physique</h3>
+<p>Exercices</p>
+</div>
+
+<div class="card">
+<h3>Chimie</h3>
+<p>Podcasts</p>
+</div>
+
+<div class="card">
+<h3>Biologie</h3>
+<p>Vidéos</p>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
