@@ -2,97 +2,67 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Acadoria Academy</title>
 
 <style>
 
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f8f6f0;
+margin:0;
+font-family:Arial,sans-serif;
+background:#ecdbcb;
 }
 
 header{
-    background:#162b63;
-    color:white;
-    padding:20px;
+background:#10326b;
+padding:20px;
+color:white;
 }
 
-.top-menu{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+nav{
+display:flex;
+justify-content:space-between;
 }
 
-.subjects a,
-.nav a{
-    color:white;
-    text-decoration:none;
-    margin-right:25px;
+.left-menu,
+.right-menu{
+display:flex;
+gap:30px;
 }
 
 .hero{
-    background:#162b63;
-    color:white;
-    display:flex;
-    padding:40px;
-    border-top:1px solid white;
+padding:80px;
+background:#10326b;
+color:white;
 }
 
-.languages{
-    width:80px;
-    border-right:1px solid white;
-    padding-right:20px;
+.hero h1{
+font-size:70px;
+margin:0;
 }
 
-.languages p{
-    margin:20px 0;
+.hero p{
+font-size:24px;
 }
 
-.main-title{
-    padding-left:40px;
+.section{
+padding:50px;
 }
 
-.main-title h1{
-    font-size:80px;
-    margin:0;
-    font-family:Georgia, serif;
-}
-
-.main-title p{
-    font-size:28px;
-}
-
-.search{
-    margin-left:50px;
-    margin-top:15px;
-}
-
-.search input{
-    padding:10px;
-    width:250px;
-}
-
-.content{
-    padding:40px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 8px rgba(0,0,0,0.1);
+background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
 }
 
-.card h3{
-    color:#162b63;
+h2{
+color:#4d3628;
 }
 
 </style>
@@ -102,71 +72,56 @@ header{
 
 <header>
 
-<div class="top-menu">
+<nav>
 
-<div class="subjects">
-<a href="#">Maths</a>
-<a href="#">Chimie</a>
-<a href="#">Biologie</a>
-<a href="#">Physique</a>
+<div class="left-menu">
+<div>Maths</div>
+<div>Chimie</div>
+<div>Biologie</div>
+<div>Physique</div>
 </div>
 
-<div class="nav">
-<a href="#">Home</a>
-<a href="#">Content</a>
-<a href="#">Contact Us</a>
+<div class="right-menu">
+<div>Home</div>
+<div>Premium</div>
+<div>Profile</div>
+<div>Contact Us</div>
+<div>🔍</div>
 </div>
 
-</div>
+</nav>
 
 </header>
 
-<section class="hero">
+<div class="hero">
 
-<div class="languages">
-<p>DE</p>
-<p>FR</p>
-<p>EN</p>
-</div>
-
-<div class="main-title">
 <h1>Acadoria Academy</h1>
+
 <p>Studying doesn't suck as much as failing</p>
+
 </div>
 
-<div class="search">
-<input type="text" placeholder="Rechercher...">
-</div>
+<div class="section">
 
-</section>
+<h2>New Uploads</h2>
 
-<section class="content">
-
-<div class="grid">
+<div class="cards">
 
 <div class="card">
-<h3>Maths</h3>
-<p>Cours</p>
+Fonction quadratique
 </div>
 
 <div class="card">
-<h3>Physique</h3>
-<p>Exercices</p>
+Kurvendiskussion
 </div>
 
 <div class="card">
-<h3>Chimie</h3>
-<p>Podcasts</p>
-</div>
-
-<div class="card">
-<h3>Biologie</h3>
-<p>Vidéos</p>
+Champ magnétique
 </div>
 
 </div>
 
-</section>
+</div>
 
 </body>
 </html>
